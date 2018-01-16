@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
 import logo from '../styles/logo.svg';
 import '../styles/App.css';
+import Message from './Message'
 
 class MessageList extends Component {
-  constructor(props) {
-    super(props);
+  constructor () {
+    super()
     this.state = {
       messages: [
         {
@@ -23,14 +24,15 @@ class MessageList extends Component {
       ]
     }
   }
-  render() {
-    const messages = this.state.messages.map((message) => <li>{message.title} by {message.author}</li>);
-    return (<div className="App-messages">
-      <ul>
-        {messages}
-      </ul>
-    </div>);
+  render () {
+    return (
+      <div className="App-messages">
+        <ul>
+          {this.state.messages.map(message => <Message {...message} />)}
+        </ul>
+      </div>
+    )
   }
 }
 
-export default MessageList;
+export default MessageList
