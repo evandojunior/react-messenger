@@ -6,7 +6,7 @@ class Content extends Component {
   render() {
     return (
         <div className="App-content">
-          <MessageList />
+          <MessageList example={'treta'}/>
         </div>
     );
   }
