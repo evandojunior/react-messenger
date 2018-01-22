@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from '../styles/logo.svg';
 
 class Footer extends Component {
   render() {

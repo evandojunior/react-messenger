@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-import logo from '../styles/logo.svg';
-import '../styles/App.css';
 
 class MessageList extends Component {
   constructor(props) {
